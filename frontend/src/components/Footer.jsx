@@ -1,8 +1,16 @@
 import React from 'react'
 
+
+
 function Footer() {
   return (
-    <div>Footer</div>
+    <div>
+        <nav className="navbar">
+        <div class="logo">CrowbarLtd</div>
+            
+        </nav>
+
+    </div>
   )
 }
 
