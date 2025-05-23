@@ -5,7 +5,11 @@ import React from 'react'
 function Header() {
   return (
     <div>
+      
       <div className='Navhead'>
+        <div className='menubar'>
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="#000" d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1m0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1M3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1" stroke-width="0.5" stroke="#000"/></svg>
+      </div>
       <div className='mainlogo'>
           <h1 className="logoup">Crowbar</h1>
           <h1 className="logodown">Ventures</h1>
@@ -21,7 +25,7 @@ function Header() {
           <li className='buttons-nav'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M4.616 19q-.691 0-1.153-.462T3 17.384V6.616q0-.691.463-1.153T4.615 5h14.77q.69 0 1.152.463T21 6.616v10.769q0 .69-.463 1.153T19.385 19zM12 11.96q.125 0 .234-.038q.108-.038.214-.093l7.229-4.733q.142-.086.185-.235t-.016-.297q-.038-.193-.252-.28q-.213-.086-.413.035L12 11L4.82 6.32q-.2-.122-.404-.052t-.262.276q-.058.154-.015.313t.184.24l7.229 4.732q.106.055.214.093q.109.037.234.037" stroke-width="0.5" stroke="#fff"/></svg>Contact</li>
         </ul>
       </div>
-      <div>
+      <div className='discoverone'>
         <h1 className='discover'>Our Ventures</h1>
       </div>
       
