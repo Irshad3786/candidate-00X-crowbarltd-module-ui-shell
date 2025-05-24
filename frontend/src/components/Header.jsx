@@ -1,13 +1,23 @@
 import React from 'react'
+import { useState } from 'react';
 
 
 
 function Header() {
+  const [showMenuBar, setShowMenuBar] = useState(false);
+  const menubar = ()=>{
+    setShowMenuBar(prev => !prev);
+    
+  }
+
+  const Cancelmenu = ()=>{
+    setShowMenuBar(prev => !prev);
+  }
   return (
     <div>
       
       <div className='Navhead'>
-        <div className='menubar'>
+        <div className='menubar' onClick={menubar}>
         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="#000" d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1m0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1M3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1" stroke-width="0.5" stroke="#000"/></svg>
       </div>
       <div className='mainlogo'>
@@ -28,7 +38,25 @@ function Header() {
       <div className='discoverone'>
         <h1 className='discover'>Our Ventures</h1>
       </div>
-      
+      <div className={`MenuBar ${showMenuBar ? 'show' : ''}`}>
+          <div className="cancel" onClick={Cancelmenu}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"/></svg>
+          </div>  
+
+          <div>
+            <ul className='nav-main-menu-bar'>
+              <li className='buttons-nav-menu'>
+                 Home
+              </li>
+              <li className='buttons-nav-menu'>About Us</li>
+              <li className='buttons-nav-menu'>Platforms</li>
+              <li className='buttons-nav-menu'> Portfolio</li>
+              <li className='buttons-nav-menu'>Contact</li>
+
+
+            </ul>
+          </div>
+      </div>
      </div>
     </div>
   )
